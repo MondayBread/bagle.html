@@ -55,6 +55,10 @@ angular
         templateUrl: 'views/popup/edit-group/edit-group.html',
         controller: 'AboutCtrl'
       })
+      .when('/edit-profile', {
+        templateUrl: 'views/popup/edit-profile/edit-profile.html',
+        controller: 'AboutCtrl'
+      })
       .when('/group', {
         templateUrl: 'views/popup/group/group.html',
         controller: 'AboutCtrl'

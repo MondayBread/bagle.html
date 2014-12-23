@@ -35,6 +35,10 @@ angular
         templateUrl: 'views/main/profile/profile.html',
         controller: 'AboutCtrl'
       })
+      .when('/answered', {
+        templateUrl: 'views/popup/answered/answered.html',
+        controller: 'AboutCtrl'
+      })
       .when('/login', {
         templateUrl: 'views/popup/auth/login/login.html',
         controller: 'AboutCtrl'
@@ -93,6 +97,10 @@ angular
       })
       .when('/select-member', {
         templateUrl: 'views/popup/select-member/select-member.html',
+        controller: 'AboutCtrl'
+      })
+      .when('/unanswered', {
+        templateUrl: 'views/popup/unanswered/unanswered.html',
         controller: 'AboutCtrl'
       })
       .otherwise({

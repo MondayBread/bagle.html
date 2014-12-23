@@ -14,26 +14,23 @@ Sass관련 선언( $, @ … )
 // ------ sass ------
 
 $red: #BE3114;
+$red-font: #8d2300;
 $dark-red: #8B240B;
+$gray: #e8e8e8;
+$bright-gray: #f1f1f1;
+$header-gray: #424E4F;
+$gray-font: #848484;
+$bright-gray-font: #e2e2e2;
+$black: #000000;
+$black-font: #292f33;
 $white: #ffffff;
 $bright-white: #B37F75;
-$gray: #e8e8e8;
-$better-bright-gray: #E2E2E2;
-$bright-gray: #f1f1f1;
-$dark-gray: #848484;
-$header-gray: #424E4F;
-$dropdown-font-gray: #878787;
-$black: #000000;
 
-$nine-pixel: 9px;
-$ten-pixel: 10px;
+
 $eleven-pixel: 11px;
 $twelve-pixel: 12px;
-$twelve-five-pixel: 12.5px;
 $thirteen-pixel: 13px;
-$fifteen-pixel: 15px;
 $seventeen-pixel: 17px;
-$eighteen-pixel: 18px;
 $twentynine-pixel: 29px;
 
 
@@ -95,7 +92,7 @@ $twentynine-pixel: 29px;
     float: left;
     width: 50%;
     line-height: 46px;
-    font-size: 1.1em;
+    font-size: $seventeen-pixel;
     font-weight: 500;
     text-align: center;
     color: $white;
@@ -195,7 +192,7 @@ $twentynine-pixel: 29px;
           vertical-align: middle;
           line-height: 100%;
           font-size: $eleven-pixel;
-          color: $dark-gray;
+          color: $gray-font;
         }
       }
     }
@@ -226,7 +223,7 @@ $twentynine-pixel: 29px;
           height: auto;
           float: right;
           font-size: $eleven-pixel;
-          color: $dark-gray;
+          color: $gray-font;
         }
       }
     }
@@ -513,7 +510,7 @@ $twentynine-pixel: 29px;
   height: 46px;
   span {
       color: $white;
-      font-size: $twelve-five-pixel; 
+      font-size: $twelve-pixel; 
     }
   .popular {
     float: left;
@@ -542,7 +539,7 @@ $twentynine-pixel: 29px;
     text-align: center;
     .count {
       color: $white;
-      font-size: $eighteen-pixel; 
+      font-size: $seventeen-pixel; 
     }
     .text {
       color: $white;
@@ -558,7 +555,7 @@ $twentynine-pixel: 29px;
     text-align: center;
     .count {
       color: $white;
-      font-size: $eighteen-pixel; 
+      font-size: $seventeen-pixel; 
     }
     .text {
       color: $white;
@@ -718,7 +715,7 @@ $twentynine-pixel: 29px;
     .user-name {
       margin: 0 0 0 10px;
       color: $white;
-      font-size: $eighteen-pixel;
+      font-size: $seventeen-pixel;
     }
     .user-information {
       margin: 0 0 0 10px;
@@ -769,11 +766,18 @@ $twentynine-pixel: 29px;
     float: left;
     width: 100%;
     height: 43.5px;
-    span {
+    .create-bagle-name {
       line-height: 43.5px;
       color: $white;
       margin: 0 0 0 15px;
-      font-size: $fifteen-pixel;
+      font-size: $seventeen-pixel;
+      font-weight: 600;
+    }
+    .create-bagle-information {
+      line-height: 43.5px;
+      color: $white;
+      margin: 0 0 0 15px;
+      font-size: $eleven-pixel;
     }
   }
   img {
@@ -890,7 +894,7 @@ $twentynine-pixel: 29px;
       line-height: 46px;
       background-color: $gray;
       border-radius: 3px;
-      font-size: $ten-pixel;
+      font-size: $eleven-pixel;
     }
   }
 }
@@ -917,7 +921,7 @@ $twentynine-pixel: 29px;
     margin: 0 0 0 15px;
     span {
       line-height: 62px;
-      font-size: $fifteen-pixel;
+      font-size: $seventeen-pixel;
     }
   }
 }
@@ -973,8 +977,8 @@ $twentynine-pixel: 29px;
         width: 80%;
         height: 50%;
         line-height: 18px;
-        color: $dropdown-font-gray;
-        font-size: $ten-pixel;
+        color: $bright-gray-font;
+        font-size: $eleven-pixel;
       }
     }
     img {
@@ -1034,7 +1038,7 @@ $twentynine-pixel: 29px;
     }
     span {
       font-size: $eleven-pixel;
-      color: $dark-gray;
+      color: $gray-font;
     }
   }
 }
@@ -1221,8 +1225,8 @@ $twentynine-pixel: 29px;
     height: 100%;
     span {
       line-height: 62px;
-      font-size: $nine-pixel;
-      color: $better-bright-gray;
+      font-size: $eleven-pixel;
+      color: $bright-gray-font;
     }
   }
 }
@@ -1298,7 +1302,7 @@ $twentynine-pixel: 29px;
     .type-text {
       float: right;
       font-size: $thirteen-pixel;
-      color: $dark-gray;
+      color: $gray-font;
     }
   }
 }
@@ -1325,7 +1329,7 @@ $twentynine-pixel: 29px;
     span {
       line-height: 56px;
       font-size: $thirteen-pixel;
-      color: $dark-gray;
+      color: $gray-font;
     }
   }
   img {
@@ -1480,6 +1484,7 @@ $twentynine-pixel: 29px;
       line-height: 46px;
       margin: 0 0 0 16px;
       font-size: $thirteen-pixel;
+      font-weight: 600;
     }
     .comment-counting {
       float: right;
@@ -1491,14 +1496,16 @@ $twentynine-pixel: 29px;
   .comment-con {
     width: 100%;
     height: 62px;
+    margin: 0 0 10px 0;
     .comment-user-photo{
       float: left;
       width: 50px;
       height: 100%;
       img {
-        width: 33px;
-        height: 33px;
+        width: 36px;
+        height: 36px;
         border-radius: 50%;
+        border: 1px solid #d8d8d8;
         margin: 4px 0 0 8px;
       }
     }
@@ -1518,7 +1525,7 @@ $twentynine-pixel: 29px;
         width: auto;
         height: 33.3%;
         span {
-          font-size: $twelve-pixel;
+          font-size: $thirteen-pixel;
         }
       }
       .comment-time {
@@ -1526,7 +1533,7 @@ $twentynine-pixel: 29px;
         height: 33.3%;
         span {
           font-size: $eleven-pixel;
-          color: $dark-gray;
+          color: $gray-font;
         }
       }
     }

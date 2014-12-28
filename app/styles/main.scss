@@ -33,6 +33,15 @@ $thirteen-pixel: 13px;
 $seventeen-pixel: 17px;
 $twentynine-pixel: 29px;
 
+.ellipsis {
+  overflow : hidden;
+  white-space: nowrap;
+  text-overflow:ellipsis;
+  -o-text-overflow:ellipsis;
+  -ms-text-overflow:ellipsis;
+  -moz-binding:url(/xe/ellipsis.xml#ellipsis);
+}
+
 
 // ------ sass ------
 
@@ -168,8 +177,10 @@ $twentynine-pixel: 29px;
         }
         span {
           float: left;
+          width: 80%;
           margin: 0 0 0 10px;
           font-size: $eleven-pixel;
+          @extend .ellipsis;
         }
       }
       .time {
@@ -601,7 +612,7 @@ $twentynine-pixel: 29px;
       height: 100%;
       .master {
         float: left;
-        width: 70%;
+        width: 100%;
         height: auto;
         margin: 15px 0 0 0;
         padding: 0 0 0 8px;
@@ -613,19 +624,22 @@ $twentynine-pixel: 29px;
         }
         span {
           float: left;
+          width: 78%;
           margin: 0 0 0 10px;
           color: $white;
           font-size: $eleven-pixel;
+          @extend .ellipsis;
         }
       }
       .description {
         float: left;
-        width: 70%;
+        width: 100%;
         height: auto;
         margin: 10px 0 0 0;
         padding: 0 0 0 15px;
         color: $white;
         font-size: $twelve-pixel;
+        @extend .ellipsis;
       }
     }
     .option {
@@ -710,17 +724,21 @@ $twentynine-pixel: 29px;
     position: absolute;
     top: 250px;
     left: 0;
-    width: auto;
+    width: 80%;
     height: auto;
     .user-name {
+      width: 100%;
       margin: 0 0 0 10px;
       color: $white;
       font-size: $seventeen-pixel;
+      @extend .ellipsis;
     }
     .user-information {
+      width: 100%;
       margin: 0 0 0 10px;
       color: $white;
       font-size: $eleven-pixel;
+      @extend .ellipsis;
     }
   }
   .user-setting-btn {
@@ -1125,9 +1143,11 @@ $twentynine-pixel: 29px;
   z-index: 3;
   span {
     float: left;
+    width: 80%;
     margin: 0 0 0 16px;
     line-height: 88px;
     color: $white;
+    @extend .ellipsis;
   }
   img {
     float: right;

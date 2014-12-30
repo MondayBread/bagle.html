@@ -745,9 +745,11 @@ input, textarea{
 .user-info {
   width: 100%;
   height: 253px;
-  img {
+  background: url('../images/ProfilePhoto.png');
+  background-size: 100% 100%;
+  .blank-div {
     width: 100%;
-    height: 100%;
+    height: 80%;
   }
   .change-photo-btn {
     position: absolute;
@@ -761,36 +763,66 @@ input, textarea{
     }
   }
   .name-con {
-    position: absolute;
-    top: 250px;
-    left: 0;
-    width: 80%;
-    height: auto;
-    .user-name {
-      width: 100%;
-      margin: 0 0 0 10px;
-      color: $white;
-      font-size: $seventeen-pixel;
-      @extend .ellipsis;
+    width: 100%;
+    height: 20%;
+    .user-info-text{
+      float: left;
+      width: 80%;
+      height: 100%;
+      .user-name {
+        float: left;
+        width: 100%;
+        height: 50%;
+        margin: 0 0 0 10px;
+        color: $white;
+        font-size: $seventeen-pixel;
+        @extend .ellipsis;
+      }
+      .user-information {
+        float: left;
+        width: 100%;
+        height: 50%;
+        margin: 0 0 0 10px;
+        color: $white;
+        font-size: $eleven-pixel;
+        line-height: 25px;
+        @extend .ellipsis;
+      }
     }
-    .user-information {
+    .user-info-text-popup {
+      float: left;
       width: 100%;
-      margin: 0 0 0 10px;
-      color: $white;
-      font-size: $eleven-pixel;
-      @extend .ellipsis;
+      height: 100%;
+      .user-name {
+        float: left;
+        width: 94%;
+        height: 50%;
+        margin: 0 0 0 10px;
+        color: $white;
+        font-size: $seventeen-pixel;
+        @extend .ellipsis;
+      }
+      .user-information {
+        float: left;
+        width: 94%;
+        height: 50%;
+        margin: 0 0 0 10px;
+        color: $white;
+        font-size: $eleven-pixel;
+        line-height: 25px;
+        @extend .ellipsis;
+      }
     }
-  }
-  .user-setting-btn {
-    position: absolute;
-    top: 250px;
-    right: 0;
-    width: auto;
-    height: auto;
-    img {
-      width: 32px;
-      height: 32px;
+    .user-setting-btn {
+      float: right;
+      width: auto;
+      height: 100%;
       margin: 0 10px 0 0;
+      img {
+        width: 32px;
+        height: 32px;
+        margin: 10px 0 0 0;
+      }
     }
   }
 }
@@ -1599,4 +1631,3 @@ input, textarea{
     }
   }
 }
-

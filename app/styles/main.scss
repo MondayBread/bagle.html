@@ -43,7 +43,11 @@ $twentynine-pixel: 29px;
 }
 
 
-// ------ sass ------
+// ------ common ------
+
+input, textarea{
+  outline-style: none;
+}
 
 
 // ------ header, footer, line ------
@@ -377,6 +381,7 @@ $twentynine-pixel: 29px;
 }
 
 // ------ auth ------
+
 .auth {
   float: left;
   width: 100%;
@@ -386,7 +391,7 @@ $twentynine-pixel: 29px;
     float: left;
     width: 100%;
     height: auto;
-    .signup {
+    .login-signup-tab {
       float: left;
       width: 25%;
       height: 110px;
@@ -394,6 +399,15 @@ $twentynine-pixel: 29px;
       line-height: 110px;
       text-align: center;
       color: $bright-white;
+    }
+    .login-login-tab {
+      float: left;
+      width: 25%;
+      height: 110px;
+      margin: 0 10% 0 0;
+      line-height: 110px;
+      text-align: center;
+      color: $white;
     }
     .logo {
       float: left;
@@ -409,29 +423,37 @@ $twentynine-pixel: 29px;
         height: 44px;
       }
     }
-    .login {
+    .signup-signup-tab {
+      float: left;
+      width: 25%;
+      height: 110px;
+      margin: 0 0 0 10%;
+      line-height: 110px;
+      text-align: center;
+      color: $white;
+    }
+    .signup-login-tab {
       float: left;
       width: 25%;
       height: 110px;
       margin: 0 10% 0 0;
       line-height: 110px;
       text-align: center;
-      color: $white;
+      color: $bright-white;
     }
   }
-
   .write {
     float: left;
     width: 100%;
     height: auto;
-    .email-con {
+    .signup-point-con {
       float: left;
       width: 100%;
       height: 60px;
-      background: url('../images/LoginBar01.png');
+      background: url('../images/SignupBar.png');
       background-size: 100% 100%;
       margin: 0 0 1px 0;
-      .email {
+      .signup-name {
         float: left;
         width: 100%;
         height: 60px;
@@ -441,14 +463,31 @@ $twentynine-pixel: 29px;
         line-height: 74px;
       }
     }
-    .password-con {
+    .login-point-con {
+      float: left;
+      width: 100%;
+      height: 60px;
+      background: url('../images/LoginBar01.png');
+      background-size: 100% 100%;
+      margin: 0 0 1px 0;
+      .login-email {
+        float: left;
+        width: 100%;
+        height: 60px;
+        border:none;
+        background:transparent;
+        text-align: center;
+        line-height: 74px;
+      }
+    }
+    .default-con {
       float: left;
       width: 100%;
       height: 46px;
       background: url('../images/LoginBar02.png');
       background-size: 100% 100%;
       margin: 0 0 1px 0;
-      .password {
+      .auth-input {
         float: left;
         width: 90%;
         height: 100%;
@@ -472,6 +511,7 @@ $twentynine-pixel: 29px;
     height: auto;
     margin: 29px 0 0 0;
     text-align: center;
+    color: $white;
   }
 
   .social {
